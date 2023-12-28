@@ -34,7 +34,14 @@ const Categories = () => {
             )} rounded-xl px-5 h-12 font-medium	text-base leading-4 flex items-center`}
           >
             {img && (
-              <Image src={img} width={20} height={20} alt="" className="mr-3" />
+              <Image
+                loading="lazy"
+                src={img}
+                width={20}
+                height={20}
+                alt=""
+                className="mr-3"
+              />
             )}
             {title}
           </button>

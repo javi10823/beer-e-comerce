@@ -88,6 +88,7 @@ const PDP = ({ params }: Props) => {
           fallback={<div className="size-60 skeleton" />}
         >
           <Image
+            loading="lazy"
             src={product?.image || ""}
             width={240}
             height={240}

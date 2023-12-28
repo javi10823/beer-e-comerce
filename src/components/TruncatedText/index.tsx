@@ -13,7 +13,7 @@ const TruncatedText = ({ text = "", max }: Props) => {
 
   return (
     <p>
-      {text.slice(0, 190).trim()}...
+      {text.slice(0, max).trim()}...
       <button
         className="text-primary font-bold ml-1"
         onClick={() => setShowAll(true)}
